@@ -1,0 +1,11 @@
+# Verification record
+
+The production build passed TypeScript and Vite compilation. Eleven automated tests passed: contact identity, content-schema rejection, image data-URL roundtrip, unsafe-image rejection, exact donation arithmetic, encoded contact links, honest sample-event metadata HTTP-compatible UUID creation, slider wrapping, slide import validation and legacy draft migration.
+
+Desktop browser checks covered the core public routes: community, programmes, wellbeing, gatherings, stories, involvement, donations and contact. All displayed headings; no horizontal overflow or empty/hash-only links was observed on these routes. The homepage was visually reviewed. The contact form prepared a correctly addressed email draft; no email was sent. A homepage text change persisted after a browser reload using the local studio.
+
+A browser test exposed UUID generation failing on an insecure local HTTP preview; the app now falls back to cryptographic getRandomValues, and the regression test passes.
+
+The browser recovered during the community-design revision. The homepage was visually reviewed at desktop (1363px), phone (390px) and tablet (820px) widths. No horizontal overflow was found in the checked phone community, gatherings, donation, contact or homepage-editor layouts. Mobile navigation was opened and its first-visit link reached the contact page. The first-visit URL preselected First visit in the form. A slider headline saved in the local editor survived a fresh page load; the test text was then restored to the original. Slider next/dot controls, inactive-slide exclusion and automatic advancement were observed; manual navigation pauses automatic rotation. The end-to-end media-upload and import/export download interactions remain unverified after the earlier file-chooser timeout. No live Stripe, notification email, production authentication or server registration was tested because they belong to the next backend stage.
+
+Before approval, review the design on your own phone, studio image upload/replacement and JSON import/export. Then approve content, replace illustrations as desired and supply confirmed event dates. No test-browser local edits are included in the source or built release.

@@ -1,0 +1,2 @@
+Burhaniya UK frontend 2.0.0
+Connected backend content and Stripe donation flow.
