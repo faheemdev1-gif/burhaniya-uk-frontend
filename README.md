@@ -1,4 +1,4 @@
-# Burhaniya UK frontend 2.0.0
+# Burhaniya UK frontend 2.0.1
 
 Complete standalone React frontend for Vercel, including the connected admin panel, gallery, articles, event enquiries and Stripe donation interface. Use the standalone Hostinger backend 2.0.1 separately.
 
@@ -19,3 +19,13 @@ Save draft stores edits on the backend. Publish website makes them public. Event
 The dist folder contains the compiled build made with the default same-origin /api path. For Vercel/Hostinger split hosting, set VITE_API_URL and rebuild; uploading the existing dist unchanged will not point it at a separate API host.
 
 Production build and frontend regression checks passed in the fullstack release. Browser testing of the new connected admin/gallery was blocked by the managed preview environment. Real payments and email delivery require backend configuration and acceptance testing.
+
+## Logo update
+
+Your supplied transparent logo is now bundled unchanged. See LOGO-UPDATE.md. Keep your existing .env.local and Git repository when copying these updated frontend files. No backend update or database reset is required.
+
+UK English is explicitly set with en-GB language/date/number formatting. See UK-ENGLISH.md.
+
+## Version 2.0.3 — content review, original public structure
+
+The original public layout, navigation, slideshow, section order and entry titles are retained. See CONTENT-UPDATE.md for source grounding and the optional admin draft refresh. Existing published CMS content is preserved until reviewed, saved and published. Stripe setup remains in STRIPE-SETUP.md.

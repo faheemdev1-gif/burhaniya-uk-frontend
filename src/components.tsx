@@ -10,7 +10,8 @@ export function Mark({
 }: {
   large?: boolean;
 }) {
-  return <svg className={`brand-mark ${large ? 'large' : ''}`} viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" strokeWidth="1.1"><circle cx="32" cy="32" r="26" /><path d="M14 14h36v36H14Z" /><path d="M32 13 51 32 32 51 13 32Z" /><path d="M20 20h24v24H20Z" /><circle cx="32" cy="32" r="7" /></g></svg>;
+  const {content}=useContent();
+  return <img className={`brand-mark official-mark ${large?'large':''}`} src={content.settings.logo||'/images/burhaniya-logo.png'} alt="" aria-hidden="true"/>;
 }
 export const Arrow = () => <ArrowUpRight size={19} aria-hidden="true" />;
 export function ButtonLink({

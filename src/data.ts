@@ -1,53 +1,62 @@
-import type { SiteContent } from './types';
+import type { SiteContent } from "./types";
 export const defaultContent: SiteContent = {
-  schemaVersion: 1,
-  settings: {
-    name: 'TARIQA BURHANIYA DISUQIYA SHADHULIYA',
-    organisation: 'Al Burhaniya UK',
-    email: 'admin@burhaniya.org.uk',
-    phone: '+44 7866 699995',
-    address: '258 Harrow Road, London, W2 5ES',
-    charityNumber: '1041647',
-    footerText: 'A community shaped by compassion. A space for reflection, connection and belonging.',
-    logo: ''
+  "schemaVersion": 1,
+  "settings": {
+    "name": "TARIQA BURHANIYA DISUQIYA SHADHULIYA",
+    "organisation": "Al Burhaniya UK",
+    "email": "admin@burhaniya.org.uk",
+    "phone": "+44 7866 699995",
+    "address": "258 Harrow Road, London, W2 5ES",
+    "charityNumber": "1041647",
+    "footerText": "A community shaped by compassion. A space for reflection, connection and belonging.",
+    "logo": ""
   },
-  home: {
-    eyebrow: 'A welcoming community in London',
-    title: 'A place to belong.',
-    accent: 'People to grow with.',
-    intro: 'Good company. A little calm. A shared purpose. Meet a community where different backgrounds and generations come together — and your first visit starts with a simple hello.',
-    heroImage: '/images/gathering.webp',
-    welcomeTitle: 'Come as you are.\nFind your place.',
-    welcomeBody: 'We are a London-based community guided by spiritual values and a shared care for others. Through reflection, learning and practical support, we make room for connection across generations and backgrounds.\n\nWhether you are curious about the Burhaniya path, looking for community, or ready to lend a hand, there is a place to begin.',
-    welcomeImage: '/images/gathering.webp',
-    slides: [{
-      id: 'pause-together',
-      eyebrow: 'Make a little room for yourself',
-      title: 'Slow down.',
-      accent: 'Reconnect, together.',
-      intro: 'Take a break from the everyday. Find thoughtful conversation, shared reflection and people who make room for your questions.',
-      image: '/images/relaxing.webp',
-      link: '/wellbeing',
-      linkLabel: 'Explore wellbeing'
-    }, {
-      id: 'care-together',
-      eyebrow: 'Small acts. Shared purpose.',
-      title: 'Good things grow',
-      accent: 'when we come together.',
-      intro: 'Learning, practical care and time for one another. Discover the ways you can take part, at a pace that feels right for you.',
-      image: '/images/volunteers.webp',
-      link: '/what-we-do',
-      linkLabel: 'See what we do'
-    }]
+  "home": {
+    "eyebrow": "A welcoming community in London",
+    "title": "A place to belong.",
+    "accent": "People to grow with.",
+    "intro": "Good company. A little calm. A shared purpose. Meet a community where different backgrounds and generations come together — and your first visit starts with a simple hello.",
+    "heroImage": "/images/gathering.webp",
+    "welcomeTitle": "Come as you are.\nFind your place.",
+    "welcomeBody": "We are a London-based community guided by spiritual values and care for others. Our approach connects reflection with how we treat people: listening with patience, respecting dignity and looking for useful ways to help.\n\nWhether you are curious about the Burhaniya path, looking for community or ready to lend a hand, start with a conversation. Ask the team about current activities and a suitable first visit.",
+    "welcomeImage": "/images/gathering.webp",
+    "slides": [
+      {
+        "id": "pause-together",
+        "eyebrow": "Make a little room for yourself",
+        "title": "Slow down.",
+        "accent": "Reconnect, together.",
+        "intro": "Take a break from the everyday. Find thoughtful conversation, shared reflection and people who make room for your questions.",
+        "image": "/images/relaxing.webp",
+        "link": "/wellbeing",
+        "linkLabel": "Explore wellbeing"
+      },
+      {
+        "id": "care-together",
+        "eyebrow": "Small acts. Shared purpose.",
+        "title": "Good things grow",
+        "accent": "when we come together.",
+        "intro": "Learning, practical care and time for one another. Discover the ways you can take part, at a pace that feels right for you.",
+        "image": "/images/volunteers.webp",
+        "link": "/what-we-do",
+        "linkLabel": "See what we do"
+      }
+    ]
   },
-  galleries: [{
-    id: 'community-moments',
-    slug: 'community-moments',
-    title: 'Together, in small moments.',
-    description: 'Illustrative community scenes. Approved photographs of our own gatherings will be added by the team.',
-    mediaIds: ['tea', 'garden', 'hands']
-  }],
-  copy: {
+  "galleries": [
+    {
+      "id": "community-moments",
+      "slug": "community-moments",
+      "title": "Together, in small moments.",
+      "description": "Illustrative community scenes. Approved photographs of our own gatherings will be added by the team.",
+      "mediaIds": [
+        "tea",
+        "garden",
+        "hands"
+      ]
+    }
+  ],
+  "copy": {
     "components.skip-to-content.0a4470": "Skip to content",
     "components.london-united-kingdom.742f70": " London, United Kingdom",
     "components.a-shared-path-a-welcoming-community-.9ce436": "A shared path. A welcoming community.",
@@ -125,7 +134,7 @@ export const defaultContent: SiteContent = {
     "pages.03.3ea6c9": "03",
     "pages.come-along-at-your-own-pace.8e8d91": "Come along, at your own pace",
     "pages.meet-people-listen-and-get-a-feel-for-the-community-dec.e85af2": "Meet people, listen and get a feel for the community. Decide your next step in your own time.",
-    "pages.spiritual-healing-wellbeing.1f91e7": "Spiritual healing & wellbeing",
+    "pages.spiritual-healing-wellbeing.1f91e7": "Spiritual wellbeing",
     "pages.find-a-quieter-moment-.13fdc7": "Find a quieter moment.",
     "pages.discover-a-deeper-connection-.914fab": "Discover a deeper connection.",
     "pages.explore-spiritual-reflection-remembrance-and-compassion.3f1367": "Explore spiritual reflection, remembrance and compassionate conversation. There is room for your questions, and time to find your own way.",
@@ -276,192 +285,211 @@ export const defaultContent: SiteContent = {
     "forms.2-secure-stripe-checkout.7991a7": "2 · Secure Stripe checkout",
     "forms.card-details-are-entered-on-stripe-s-secure-checkout-we.ef8cd0": "Card details are entered on Stripe’s secure checkout. We do not store your card details."
   },
-  pages: {
-    gallery: {
-      eyebrow: 'Community gallery',
-      title: 'People. Moments.\nA sense of belonging.',
-      intro: 'A window into gathering, sharing and caring for one another.',
-      body: 'Explore published albums from our community.',
-      image: '/images/gathering.webp'
+  "pages": {
+    "gallery": {
+      "eyebrow": "Community gallery",
+      "title": "People. Moments.\nA sense of belonging.",
+      "intro": "A window into gathering, sharing and caring for one another.",
+      "body": "Explore published albums from our community.",
+      "image": "/images/gathering.webp"
     },
-    community: {
-      eyebrow: 'Our community',
-      title: 'Different journeys.\nA shared sense of belonging.',
-      intro: 'A community grows through the care we offer each other. Ours brings spiritual reflection and everyday compassion together.',
-      body: 'Al Burhaniya UK is a London-based charity with a commitment to education, wellbeing, practical support and community life. Our spiritual values guide how we meet one another: with compassion, dignity and a willingness to listen.\n\nOur work connects generations and backgrounds, supporting people facing hardship and creating opportunities to learn, contribute and belong. The Burhaniya tradition gives us a foundation for reflection; our shared humanity gives that reflection a purpose in everyday life.',
-      image: '/images/gathering.webp'
+    "community": {
+      "eyebrow": "Our community",
+      "title": "Different journeys.\nA shared sense of belonging.",
+      "intro": "A community grows through the care we offer each other. Ours brings spiritual reflection and everyday compassion together.",
+      "body": "Al Burhaniya UK is a London-based charity. Our spiritual values draw on the Burhaniya Sufi tradition, rooted in Islam, with an emphasis on remembrance, good character and service to others.\n\nIn the Burhaniya collection, a 2010 annual address connects spiritual conduct with compassion and help for people regardless of their background, religion or gender. It also encourages service to family, neighbourhood and society. These themes guide how we describe reflection, care and community on this website.\n\nIf you are curious about the path, looking for company or interested in contributing, contact the team. Ask about current activities, what a gathering involves and any practical arrangements before you visit.",
+      "image": "/images/gathering.webp"
     },
-    programmes: {
-      eyebrow: 'What we do',
-      title: 'Care that reaches\nbeyond a gathering.',
-      intro: 'From time spent listening to practical help in moments of hardship, our work is rooted in care for the whole person.',
-      body: 'Our areas of work bring together learning, wellbeing, cultural connection and practical support. Contact us to discuss current opportunities, availability and how you can take part.',
-      image: '/images/volunteers.webp'
+    "programmes": {
+      "eyebrow": "What we do",
+      "title": "Care that reaches\nbeyond a gathering.",
+      "intro": "From time spent listening to practical help in moments of hardship, our work is rooted in care for the whole person.",
+      "body": "Explore the values and areas of interest that guide our community. Ask the team about current activities, available support and how you can take part.",
+      "image": "/images/volunteers.webp"
     },
-    gatherings: {
-      eyebrow: 'Events & gatherings',
-      title: 'Make room\nfor a shared moment.',
-      intro: 'Discover ways to meet the community, explore spiritual reflection and take part in everyday acts of service.',
-      body: 'The gathering types below introduce ways to get involved. Dates and attendance arrangements are to be confirmed with the team. We will publish the event calendar here when details are available.',
-      image: '/images/gathering.webp'
+    "gatherings": {
+      "eyebrow": "Events & gatherings",
+      "title": "Make room\nfor a shared moment.",
+      "intro": "Discover ways to meet the community, explore spiritual reflection and take part in everyday acts of service.",
+      "body": "The gathering types below introduce ways to get involved. Dates and attendance arrangements are to be confirmed with the team. We will publish the event calendar here when details are available.",
+      "image": "/images/gathering.webp"
     },
-    stories: {
-      eyebrow: 'Stories & perspectives',
-      title: 'Small moments.\nMeaningful connections.',
-      intro: 'A place for reflections, first-visit guides and the everyday ideas that bring our community together.',
-      body: 'Start with these introductory guides. Community news and approved stories can be added by the team as the website develops.',
-      image: '/images/relaxing.webp'
+    "stories": {
+      "eyebrow": "Stories & perspectives",
+      "title": "Small moments.\nMeaningful connections.",
+      "intro": "A place for reflections, first-visit guides and the everyday ideas that bring our community together.",
+      "body": "Our introductory guides explain first visits and explore reflection and compassion in everyday language. Where an article draws on the Burhaniya collection, its source note identifies the relevant address. Practical suggestions are our editorial interpretation rather than direct quotations or formal spiritual instruction.",
+      "image": "/images/relaxing.webp"
     },
-    wellbeing: {
-      eyebrow: 'Spiritual healing & wellbeing',
-      title: 'Space to pause.\nRoom to reconnect.',
-      intro: 'Spiritual wellbeing can begin with a quiet moment, a thoughtful conversation, or the reassurance of being among people who care.',
-      body: 'Our spiritual tradition offers an invitation to reflection, remembrance and compassionate living. You can ask about gatherings, explore the path at your own pace, or speak with the team about the support you are looking for.\n\nParticipation is a personal choice. You are welcome to ask questions before visiting and to let us know about any access needs or concerns.',
-      image: '/images/relaxing.webp'
+    "wellbeing": {
+      "eyebrow": "Spiritual wellbeing",
+      "title": "Space to pause.\nRoom to reconnect.",
+      "intro": "Spiritual wellbeing can begin with a quiet moment, a thoughtful conversation, or the reassurance of being among people who care.",
+      "body": "Our spiritual tradition connects remembrance with compassionate living. Dhikr means remembrance of God, expressed through devotional words and recitation. If you are unfamiliar with it, ask the team what happens at a gathering and what participation involves.\n\nYou can explore your questions before deciding to visit. Contact the team about current opportunities, the format of a gathering and any access needs. Participation is a personal choice.",
+      "image": "/images/relaxing.webp"
     },
-    'get-involved': {
-      eyebrow: 'Get involved & donate',
-      title: 'There is more than\none way to give.',
-      intro: 'Your time, skills and generosity can help create opportunities for connection and practical care.',
-      body: 'You might help with a community activity, offer a skill, support practical outreach or ask about a donation. We would love to hear what you can bring and help you find a suitable way to contribute.',
-      image: '/images/volunteers.webp'
+    "get-involved": {
+      "eyebrow": "Get involved & donate",
+      "title": "There is more than\none way to give.",
+      "intro": "Your time, skills and generosity can help create opportunities for connection and practical care.",
+      "body": "You might help with a community activity, offer a skill, support practical outreach or ask about a donation. We would love to hear what you can bring and help you find a suitable way to contribute.",
+      "image": "/images/volunteers.webp"
     },
-    contact: {
-      eyebrow: 'Contact & visiting',
-      title: 'A conversation\nis a good beginning.',
-      intro: 'Planning a first visit, asking about an activity, or offering a helping hand? Get in touch and we will help you find the right next step.',
-      body: 'Please contact us before travelling to confirm current gathering times, visiting arrangements and any accessibility requirements. We want your first visit to feel straightforward and welcoming.',
-      image: '/images/gathering.webp'
+    "contact": {
+      "eyebrow": "Contact & visiting",
+      "title": "A conversation\nis a good beginning.",
+      "intro": "Planning a first visit, asking about an activity, or offering a helping hand? Get in touch and we will help you find the right next step.",
+      "body": "Please contact us before travelling to confirm current gathering times, visiting arrangements and any accessibility requirements. We want your first visit to feel straightforward and welcoming.",
+      "image": "/images/gathering.webp"
     }
   },
-  programmes: [{
-    id: 'reflection',
-    slug: 'spiritual-reflection',
-    title: 'Reflection & spiritual wellbeing',
-    summary: 'Time to pause, explore your questions and reconnect with what matters.',
-    body: 'Our community brings spiritual reflection into everyday life through remembrance, conversation and a shared commitment to compassionate living.\n\nYou can ask about the Burhaniya tradition and gatherings without feeling that you need to arrive with all the answers. Contact us to discuss how to take part.',
-    image: '/images/relaxing.webp',
-    icon: 'spark'
-  }, {
-    id: 'learning',
-    slug: 'learning-and-growth',
-    title: 'Learning & personal growth',
-    summary: 'Encouragement, education and skills that help people move forward.',
-    body: 'Learning is one way we support individuals, families and young people. Our focus is on opening opportunities to grow in confidence, build skills and explore new possibilities.\n\nAsk the team about current educational activities, available support and ways to contribute your knowledge.',
-    image: '/images/gathering.webp',
-    icon: 'book'
-  }, {
-    id: 'support',
-    slug: 'practical-community-support',
-    title: 'Practical community support',
-    summary: 'Care expressed through everyday help for people facing hardship.',
-    body: 'Our commitment to poverty relief is grounded in dignity and human connection. Practical support and outreach help us respond to hardship and connect people with a caring community.\n\nSpeak with the team about current needs, volunteering opportunities and appropriate ways to give.',
-    image: '/images/volunteers.webp',
-    icon: 'heart'
-  }, {
-    id: 'connection',
-    slug: 'culture-and-connection',
-    title: 'Culture, creativity & connection',
-    summary: 'Shared experiences that bring generations and backgrounds closer.',
-    body: 'Community life is enriched when people can share their creativity, stories and traditions. Cultural and youth activities offer opportunities to connect, develop confidence and build a shared sense of belonging.\n\nContact us for current activities and ways that families, young people and volunteers can get involved.',
-    image: '/images/gathering.webp',
-    icon: 'people'
-  }, {
-    id: 'pastoral',
-    slug: 'listening-and-pastoral-support',
-    title: 'Listening & pastoral support',
-    summary: 'A compassionate conversation when you need space to be heard.',
-    body: 'Sometimes the first step is simply being able to talk. Our community values listening, moral support and spiritual wellbeing, with respect for the circumstances of each person.\n\nPlease contact the team to discuss what support is available and whether it is suitable for your needs. Spiritual or pastoral support does not replace professional healthcare.',
-    image: '/images/relaxing.webp',
-    icon: 'leaf'
-  }, {
-    id: 'inclusion',
-    slug: 'belonging-and-inclusion',
-    title: 'Belonging & inclusion',
-    summary: 'Building connections for people experiencing isolation or vulnerability.',
-    body: 'A supportive community makes room for people whose circumstances may leave them feeling disconnected. Our values include care for refugees and vulnerable communities, with respect for dignity and individual needs.\n\nSpeak with us about current community opportunities, support and ways to help.',
-    image: '/images/volunteers.webp',
-    icon: 'globe'
-  }],
-  gatherings: [{
-    id: 'gathering',
-    slug: 'community-gathering',
-    title: 'A first visit to the community',
-    category: 'Community',
-    date: '',
-    time: 'Please contact the team',
-    location: 'London · venue to be confirmed',
-    summary: 'Meet the community, ask questions and find out how to take part.',
-    body: 'Interested in visiting? Let us know a little about what brings you here, and the team can explain the next opportunity to join us.\n\nYou do not need previous experience of the Burhaniya tradition. Please confirm the date, venue and visiting arrangements with us before travelling.',
-    image: '/images/gathering.webp',
-    sample: true
-  }, {
-    id: 'reflection',
-    slug: 'reflection-and-remembrance',
-    title: 'Reflection & remembrance',
-    category: 'Reflection',
-    date: '',
-    time: 'Please contact the team',
-    location: 'London · venue to be confirmed',
-    summary: 'Explore spiritual reflection in a thoughtful, welcoming setting.',
-    body: 'Ask about opportunities for shared remembrance and spiritual reflection. The team can explain what to expect and help you decide whether a gathering is right for you.\n\nThe schedule and attendance arrangements will be confirmed directly with you.',
-    image: '/images/relaxing.webp',
-    sample: true
-  }, {
-    id: 'volunteering',
-    slug: 'volunteer-introduction',
-    title: 'Find your way to contribute',
-    category: 'Volunteering',
-    date: '',
-    time: 'Please contact the team',
-    location: 'London · venue to be confirmed',
-    summary: 'Discover how your time and skills could support community activities.',
-    body: 'Tell us about your interests, skills and availability. The team can discuss current volunteering opportunities and any checks, training or practical arrangements needed for the role.\n\nAn enquiry does not commit you to volunteering or reserve a place at an event.',
-    image: '/images/volunteers.webp',
-    sample: true
-  }],
-  stories: [{
-    id: 'first-visit',
-    slug: 'a-guide-to-your-first-visit',
-    title: 'Your first visit: a gentle guide',
-    category: 'First steps',
-    summary: 'A few simple things to know before you come along.',
-    body: '## Begin with a conversation\nIf you are thinking about visiting, contact the team first. We can confirm the next gathering, explain the arrangements and answer your questions.\n\n## There is no need to know everything\nCuriosity is a good place to start. You can ask about the Burhaniya tradition, what happens at a gathering and how you might participate.\n\n## Tell us what would help\nLet us know about any access needs, practical concerns or questions before you travel. Confirm the venue and timings directly with the team.\n\n## Take your time\nFinding a community is personal. Give yourself room to listen, reflect and decide what feels right for you.',
-    image: '/images/gathering.webp',
-    readTime: '3 min read'
-  }, {
-    id: 'everyday-care',
-    slug: 'compassion-in-everyday-life',
-    title: 'Compassion begins in everyday life',
-    category: 'Reflection',
-    summary: 'Small acts of care can be the beginning of stronger connections.',
-    body: '## Make space to listen\nA thoughtful conversation can help someone feel less alone. Listening with patience is one way to make care part of everyday life.\n\n## Begin with what you can offer\nTime, practical help and a willingness to learn can all be valuable contributions. A community grows through many different kinds of generosity.\n\n## Keep dignity at the centre\nHelping is also about respect. Approach others as people with their own choices, experiences and strengths.\n\n## Find a shared next step\nIf you would like to contribute to community activities, speak with our team about current opportunities and the support available to volunteers.',
-    image: '/images/volunteers.webp',
-    readTime: '4 min read'
-  }, {
-    id: 'stillness',
-    slug: 'making-room-for-reflection',
-    title: 'Making a little room for reflection',
-    category: 'Wellbeing',
-    summary: 'A pause in a busy day can create space for a more thoughtful next step.',
-    body: '## A moment to pause\nReflection does not have to begin with a complicated practice. It can start with a little space to notice what is on your mind and what matters to you.\n\n## Connection as well as quiet\nSpiritual wellbeing can be explored in conversation and community, as well as in moments of quiet. It is a personal journey, with room for questions.\n\n## Ask about the tradition\nIf you would like to learn about the Burhaniya path, contact us. The team can explain opportunities for reflection and remembrance.\n\n## Choose support that fits\nSpiritual reflection can be meaningful alongside everyday practical support. If you need medical or mental health care, seek advice from an appropriate healthcare professional.',
-    image: '/images/relaxing.webp',
-    readTime: '3 min read'
-  }],
-  media: [{
-    id: 'garden',
-    url: '/images/relaxing.webp',
-    alt: 'Illustrative adults relaxing and talking together in a leafy community garden',
-    credit: 'AI-generated illustrative image; replace with approved community photography.'
-  }, {
-    id: 'tea',
-    url: '/images/gathering.webp',
-    alt: 'Illustrative adults from different generations gathering and talking over tea',
-    credit: 'AI-generated illustrative image; replace with approved community photography.'
-  }, {
-    id: 'hands',
-    url: '/images/volunteers.webp',
-    alt: 'Illustrative adult community volunteers preparing grocery parcels together',
-    credit: 'AI-generated illustrative image; replace with approved community photography.'
-  }]
+  "programmes": [
+    {
+      "id": "reflection",
+      "slug": "spiritual-reflection",
+      "title": "Reflection & spiritual wellbeing",
+      "summary": "Time to pause, explore your questions and reconnect with what matters.",
+      "body": "Our community explores spiritual reflection through remembrance, conversation and attention to how we treat other people. A 2010 annual address in the Burhaniya collection places devotional practice alongside good conduct, compassion and helping others.\n\nYou can ask about the meaning of remembrance and what takes place at a gathering without needing prior knowledge. Contact the team for current arrangements and opportunities to take part.",
+      "image": "/images/relaxing.webp",
+      "icon": "spark"
+    },
+    {
+      "id": "learning",
+      "slug": "learning-and-growth",
+      "title": "Learning & personal growth",
+      "summary": "Encouragement, education and skills that help people move forward.",
+      "body": "Learning begins with questions. You might want to understand a spiritual practice, explore an idea in an article or discuss how a value relates to everyday life.\n\nAsk the team about current learning activities and ways to share your knowledge. We can discuss what interests you and help you find a suitable next step.",
+      "image": "/images/gathering.webp",
+      "icon": "book"
+    },
+    {
+      "id": "support",
+      "slug": "practical-community-support",
+      "title": "Practical community support",
+      "summary": "Care expressed through everyday help for people facing hardship.",
+      "body": "Care for others is one of the values we want to put into practice. A 2010 annual address in the Burhaniya collection encourages service to family, neighbourhood and society, including the contribution of time and energy.\n\nSpeak with the team about current needs, available support and appropriate ways to help. Ask what would be useful before offering your time, skills or a donation.",
+      "image": "/images/volunteers.webp",
+      "icon": "heart"
+    },
+    {
+      "id": "connection",
+      "slug": "culture-and-connection",
+      "title": "Culture, creativity & connection",
+      "summary": "Shared experiences that bring generations and backgrounds closer.",
+      "body": "Shared conversation, creativity and an interest in one another can help people connect across generations and backgrounds. Taking time to learn about someone else is one way to build a sense of belonging.\n\nContact the team to ask about current cultural or community activities and suitable ways to get involved.",
+      "image": "/images/gathering.webp",
+      "icon": "people"
+    },
+    {
+      "id": "pastoral",
+      "slug": "listening-and-pastoral-support",
+      "title": "Listening & pastoral support",
+      "summary": "A compassionate conversation when you need space to be heard.",
+      "body": "Listening with patience and responding with care are ways to make spiritual values part of daily life. You can contact the team to discuss your questions and ask what community or spiritual support is available.\n\nTell us what you are looking for so we can explain the options. Spiritual or pastoral support does not replace professional healthcare.",
+      "image": "/images/relaxing.webp",
+      "icon": "leaf"
+    },
+    {
+      "id": "inclusion",
+      "slug": "belonging-and-inclusion",
+      "title": "Belonging & inclusion",
+      "summary": "Building connections for people experiencing isolation or vulnerability.",
+      "body": "Dignity and respect matter when someone feels isolated or is facing difficult circumstances. The Burhaniya collection encourages compassion and help for others regardless of background, religion or gender.\n\nAsk the team about current opportunities to connect and what support is available. Let us know about any needs or practical concerns before arranging a visit.",
+      "image": "/images/volunteers.webp",
+      "icon": "globe"
+    }
+  ],
+  "gatherings": [
+    {
+      "id": "gathering",
+      "slug": "community-gathering",
+      "title": "A first visit to the community",
+      "category": "Community",
+      "date": "",
+      "time": "Please contact the team",
+      "location": "London · venue to be confirmed",
+      "summary": "Meet the community, ask questions and find out how to take part.",
+      "body": "Interested in visiting? Let us know a little about what brings you here, and the team can explain the next opportunity to join us.\n\nYou do not need previous experience of the Burhaniya tradition. Please confirm the date, venue and visiting arrangements with us before travelling.",
+      "image": "/images/gathering.webp",
+      "sample": true
+    },
+    {
+      "id": "reflection",
+      "slug": "reflection-and-remembrance",
+      "title": "Reflection & remembrance",
+      "category": "Reflection",
+      "date": "",
+      "time": "Please contact the team",
+      "location": "London · venue to be confirmed",
+      "summary": "Explore spiritual reflection in a thoughtful, welcoming setting.",
+      "body": "Ask about opportunities for shared remembrance and spiritual reflection. The team can explain what to expect and help you decide whether a gathering is right for you.\n\nThe schedule and attendance arrangements will be confirmed directly with you.",
+      "image": "/images/relaxing.webp",
+      "sample": true
+    },
+    {
+      "id": "volunteering",
+      "slug": "volunteer-introduction",
+      "title": "Find your way to contribute",
+      "category": "Volunteering",
+      "date": "",
+      "time": "Please contact the team",
+      "location": "London · venue to be confirmed",
+      "summary": "Discover how your time and skills could support community activities.",
+      "body": "Tell us about your interests, skills and availability. The team can discuss current volunteering opportunities and any checks, training or practical arrangements needed for the role.\n\nAn enquiry does not commit you to volunteering or reserve a place at an event.",
+      "image": "/images/volunteers.webp",
+      "sample": true
+    }
+  ],
+  "stories": [
+    {
+      "id": "first-visit",
+      "slug": "a-guide-to-your-first-visit",
+      "title": "Your first visit: a gentle guide",
+      "category": "First steps",
+      "summary": "A few simple things to know before you come along.",
+      "body": "## Begin with a conversation\nIf you are thinking about visiting, contact the team first. We can confirm the next gathering, explain the arrangements and answer your questions.\n\n## There is no need to know everything\nCuriosity is a good place to start. You can ask about the Burhaniya tradition, what happens at a gathering and how you might participate.\n\n## Tell us what would help\nLet us know about any access needs, practical concerns or questions before you travel. Confirm the venue and timings directly with the team.\n\n## Take your time\nFinding a community is personal. Give yourself room to listen, reflect and decide what feels right for you.",
+      "image": "/images/gathering.webp",
+      "readTime": "3 min read"
+    },
+    {
+      "id": "everyday-care",
+      "slug": "compassion-in-everyday-life",
+      "title": "Compassion begins in everyday life",
+      "category": "Reflection",
+      "summary": "Small acts of care can be the beginning of stronger connections.",
+      "body": "## Make space to listen\nA thoughtful conversation can help someone feel less alone. Listening with patience is one way to make care part of everyday life.\n\n## Begin with what you can offer\nTime, practical help and a willingness to learn can all be valuable contributions. A community grows through many different kinds of generosity.\n\n## Keep dignity at the centre\nHelping is also about respect. Approach others as people with their own choices, experiences and strengths.\n\n## Find a shared next step\nIf you would like to contribute to community activities, speak with our team about current opportunities and the support available to volunteers.\n\n## The idea behind this reflection\nA 2010 annual address in the collected addresses of Sheikh Muhammad Sheikh Ibrahim Sheikh Muhammad Uthman Abdu al-Burhani links good conduct with compassion and help for others regardless of their background, religion or gender. The everyday examples in this article are our own editorial suggestions, inspired by that theme.\n\nSource: annual address 2010, section 2. This article is an adaptation, not a direct quotation or literal translation.",
+      "image": "/images/volunteers.webp",
+      "readTime": "4 min read"
+    },
+    {
+      "id": "stillness",
+      "slug": "making-room-for-reflection",
+      "title": "Making a little room for reflection",
+      "category": "Wellbeing",
+      "summary": "A pause in a busy day can create space for a more thoughtful next step.",
+      "body": "## A moment to pause\nA simple starting point for personal reflection is to notice what is on your mind and how you are responding to the people around you. This is an everyday suggestion, rather than an instruction in a particular spiritual practice.\n\n## Connection as well as quiet\nSpiritual wellbeing can be explored in conversation and community, as well as in moments of quiet. It is a personal journey, with room for questions.\n\n## Ask about the tradition\nIf you would like to learn about the Burhaniya path, contact us. The team can explain opportunities for reflection and remembrance.\n\n## Choose support that fits\nSpiritual reflection can be meaningful alongside everyday practical support. If you need medical or mental health care, seek advice from an appropriate healthcare professional.\n\n## The idea behind this reflection\nA 2010 annual address in the Burhaniya collection discusses devotional practice alongside good conduct, compassion and helping others. This introductory reflection explores that connection in everyday language. Its practical suggestions are editorial, rather than a prescribed exercise or a promise of an outcome.\n\nSource: collected addresses of Sheikh Muhammad Sheikh Ibrahim Sheikh Muhammad Uthman Abdu al-Burhani, annual address 2010, section 2.",
+      "image": "/images/relaxing.webp",
+      "readTime": "3 min read"
+    }
+  ],
+  "media": [
+    {
+      "id": "garden",
+      "url": "/images/relaxing.webp",
+      "alt": "Illustrative adults relaxing and talking together in a leafy community garden",
+      "credit": "AI-generated illustrative image; replace with approved community photography."
+    },
+    {
+      "id": "tea",
+      "url": "/images/gathering.webp",
+      "alt": "Illustrative adults from different generations gathering and talking over tea",
+      "credit": "AI-generated illustrative image; replace with approved community photography."
+    },
+    {
+      "id": "hands",
+      "url": "/images/volunteers.webp",
+      "alt": "Illustrative adult community volunteers preparing grocery parcels together",
+      "credit": "AI-generated illustrative image; replace with approved community photography."
+    }
+  ]
 };
