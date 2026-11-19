@@ -29,3 +29,7 @@ UK English is explicitly set with en-GB language/date/number formatting. See UK-
 ## Version 2.0.3 — content review, original public structure
 
 The original public layout, navigation, slideshow, section order and entry titles are retained. See CONTENT-UPDATE.md for source grounding and the optional admin draft refresh. Existing published CMS content is preserved until reviewed, saved and published. Stripe setup remains in STRIPE-SETUP.md.
+
+## Version 2.0.4 — image replacement
+
+Read IMAGE-REPLACEMENT-FIX.md. Images now shows usage, gives accurate replacement feedback, and offers Save and publish changes. Existing public layout and content are preserved. No backend update is required.
