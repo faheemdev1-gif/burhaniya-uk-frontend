@@ -53,7 +53,7 @@ test('a misconfigured frontend returning HTML cannot masquerade as a successful 
  await assert.rejects(readApiResponse(new Response('<html>Frontend fallback</html>',{status:200}),'Check the backend connection'),/Check the backend connection/);
  await assert.rejects(readApiResponse(new Response('null',{status:200}),'Check the backend connection'),/Check the backend connection/);
  await assert.rejects(readApiResponse(new Response('[]',{status:200}),'Check the backend connection'),/Check the backend connection/);
- await assert.rejects(readApiResponse(new Response('<html>Too large</html>',{status:413}),'Upload failed'),/5 MB/);
+ await assert.rejects(readApiResponse(new Response('<html>Too large</html>',{status:413}),'Upload failed'),/15 MB/);
  await assert.rejects(readApiResponse(Response.json({message:'Please sign in.'},{status:401}),'Upload failed'),/Please sign in/);
  assert.deepEqual(await readApiResponse(Response.json({url:replacement.url},{status:201}),'Upload failed'),{url:replacement.url});
 });

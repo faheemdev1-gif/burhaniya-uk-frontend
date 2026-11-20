@@ -1,1 +1,1 @@
-2.0.4 — image replacement and publishing feedback fix
+2.1.0

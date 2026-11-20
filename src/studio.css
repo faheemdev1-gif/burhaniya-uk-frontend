@@ -8,3 +8,5 @@
 @media(max-width:700px){.admin-auth form{padding:25px}.admin-account{font-size:.75rem;justify-content:space-between;overflow-wrap:anywhere}.record-fields>div{grid-template-columns:1fr;gap:6px}.studio-topbar .studio-button{font-size:.78rem}.studio-topbar>div{flex-wrap:wrap}}
 
 .studio-image-usage{font-size:1rem;line-height:1.6;overflow-wrap:anywhere;color:var(--muted,#5f665a)}
+
+.studio-operation{border:0;padding:0;margin:0;min-width:0}.studio-operation:disabled{opacity:.85}.studio-api-address{overflow-wrap:anywhere;font-size:1rem}.studio-pending-image{max-width:100%;max-height:320px;object-fit:contain}

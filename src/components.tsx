@@ -1,3 +1,4 @@
+import { imageUrl } from "./api";
 import { useSiteCopy } from "./SiteCopy";
 import { useEffect, useState, type ReactNode } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
@@ -11,7 +12,7 @@ export function Mark({
   large?: boolean;
 }) {
   const {content}=useContent();
-  return <img className={`brand-mark official-mark ${large?'large':''}`} src={content.settings.logo||'/images/burhaniya-logo.png'} alt="" aria-hidden="true"/>;
+  return <img className={`brand-mark official-mark ${large?'large':''}`} src={imageUrl(content.settings.logo||'/images/burhaniya-logo.png')} alt="" aria-hidden="true"/>;
 }
 export const Arrow = () => <ArrowUpRight size={19} aria-hidden="true" />;
 export function ButtonLink({
@@ -64,7 +65,7 @@ export function Photo({
     content
   } = useContent();
   const media = content.media.find(m => m.url === src);
-  return <img className={className} src={src} alt={alt || media?.alt || 'Community website illustration'} loading={eager ? 'eager' : 'lazy'} decoding="async" />;
+  return <img className={className} src={imageUrl(src)} alt={alt || media?.alt || 'Community website illustration'} loading={eager ? 'eager' : 'lazy'} decoding="async" />;
 }
 export function ProgrammeIcon({
   name
@@ -100,7 +101,7 @@ export function Header() {
     window.addEventListener('keydown', close);
     return () => window.removeEventListener('keydown', close);
   }, [open]);
-  return <><a className="skip-link" href="#main">{siteText("components.skip-to-content.0a4470", "Skip to content")}</a><div className="topline"><div className="container"><span><MapPin size={12} />{siteText("components.london-united-kingdom.742f70", " London, United Kingdom")}</span><span>{siteText("components.a-shared-path-a-welcoming-community-.9ce436", "A shared path. A welcoming community.")}</span><a href={emailHref(content.settings.email)}><Mail size={12} />{siteText("components.get-in-touch.c9ec74", " Get in touch")}</a></div></div><header className="site-header"><div className="container header-inner"><Link to="/" className="brand" aria-label={`${content.settings.name} home`}>{content.settings.logo ? <img className="custom-logo" src={content.settings.logo} alt="" /> : <Mark />}<span><strong>{content.settings.name}</strong><small>{siteText("components.community-wellbeing-belonging.e6b6c7", "Community · Wellbeing · Belonging")}</small></span></Link><button id="menu-toggle" className="menu-toggle" type="button" aria-label={open ? 'Close navigation' : 'Open navigation'} aria-expanded={open} aria-controls="main-navigation" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</button><nav id="main-navigation" className={open ? 'main-nav open' : 'main-nav'} aria-label={siteText("components.main-navigation.efd197", "Main navigation")}>{[['/community', siteText("components.our-community.aa8fff", "Our community")], ['/what-we-do', siteText("components.what-we-do.a39b9d", "What we do")], ['/wellbeing', siteText("components.wellbeing.a85b23", "Wellbeing")], ['/gatherings', siteText("components.gatherings.43ca02", "Gatherings")], ['/stories', siteText("components.articles.7c4228", "Articles")], ['/gallery', siteText("components.gallery.9c30a3", "Gallery")]].map(([path, label]) => <NavLink key={path} to={path}>{label}</NavLink>)}<ButtonLink to="/contact?topic=First%20visit" kind="small">{siteText("components.plan-your-first-visit.dbf9b9", "Plan your first visit")}</ButtonLink></nav></div></header></>;
+  return <><a className="skip-link" href="#main">{siteText("components.skip-to-content.0a4470", "Skip to content")}</a><div className="topline"><div className="container"><span><MapPin size={12} />{siteText("components.london-united-kingdom.742f70", " London, United Kingdom")}</span><span>{siteText("components.a-shared-path-a-welcoming-community-.9ce436", "A shared path. A welcoming community.")}</span><a href={emailHref(content.settings.email)}><Mail size={12} />{siteText("components.get-in-touch.c9ec74", " Get in touch")}</a></div></div><header className="site-header"><div className="container header-inner"><Link to="/" className="brand" aria-label={`${content.settings.name} home`}>{content.settings.logo ? <img className="custom-logo" src={imageUrl(content.settings.logo)} alt="" /> : <Mark />}<span><strong>{content.settings.name}</strong><small>{siteText("components.community-wellbeing-belonging.e6b6c7", "Community · Wellbeing · Belonging")}</small></span></Link><button id="menu-toggle" className="menu-toggle" type="button" aria-label={open ? 'Close navigation' : 'Open navigation'} aria-expanded={open} aria-controls="main-navigation" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</button><nav id="main-navigation" className={open ? 'main-nav open' : 'main-nav'} aria-label={siteText("components.main-navigation.efd197", "Main navigation")}>{[['/community', siteText("components.our-community.aa8fff", "Our community")], ['/what-we-do', siteText("components.what-we-do.a39b9d", "What we do")], ['/wellbeing', siteText("components.wellbeing.a85b23", "Wellbeing")], ['/gatherings', siteText("components.gatherings.43ca02", "Gatherings")], ['/stories', siteText("components.articles.7c4228", "Articles")], ['/gallery', siteText("components.gallery.9c30a3", "Gallery")]].map(([path, label]) => <NavLink key={path} to={path}>{label}</NavLink>)}<ButtonLink to="/contact?topic=First%20visit" kind="small">{siteText("components.plan-your-first-visit.dbf9b9", "Plan your first visit")}</ButtonLink></nav></div></header></>;
 }
 function Newsletter() {
   const siteText = useSiteCopy();

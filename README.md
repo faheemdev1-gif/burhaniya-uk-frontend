@@ -1,3 +1,7 @@
+# Version 2.1.0 — live image updates
+
+Read **LIVE-IMAGES-SETUP.md** first. Update both frontend and backend. Image replacements and image selections now apply automatically after verification; new images are stored in the database. Existing content and accounts are preserved.
+
 # Burhaniya UK frontend 2.0.1
 
 Complete standalone React frontend for Vercel, including the connected admin panel, gallery, articles, event enquiries and Stripe donation interface. Use the standalone Hostinger backend 2.0.1 separately.
