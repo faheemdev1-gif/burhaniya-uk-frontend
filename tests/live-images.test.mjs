@@ -23,3 +23,27 @@ test('an incompatible backend is rejected before changing a live photo',async()=
  let committed=false;
  await assert.rejects(uploadAndApply({name:'photo.jpg'},defaultContent,'tea',{upload:async()=>({url:'http://old/media/file.webp'}),verify:async()=>{},commit:async()=>{committed=true;}}),/Update the backend/);assert.equal(committed,false);
 });
+
+const {imageTarget}=await readModule('../src/media-flow.ts');
+test('each slide uses its stable ID and the welcome photo has its own target',()=>{
+ const content=structuredClone(defaultContent);
+ assert.deepEqual(imageTarget(content,['home','heroImage']),{section:'home',key:'heroImage'});
+ assert.deepEqual(imageTarget(content,['home','welcomeImage']),{section:'home',key:'welcomeImage'});
+ for(let i=0;i<content.home.slides.length;i++)assert.deepEqual(imageTarget(content,['home','slides',i,'image']),{section:'slides',id:content.home.slides[i].id,key:'image'});
+ content.home.slides.reverse();assert.equal(imageTarget(content,['home','slides',0,'image']).id,content.home.slides[0].id);
+ assert.throws(()=>imageTarget(content,['home','slides',99,'image']),/no longer present/);
+});
+test('uploading for one slide adds the photo then assigns only that slide using the returned draft',async()=>{
+ const calls=[],content=structuredClone(defaultContent),target=imageTarget(content,['home','slides',1,'image']);
+ const result=await uploadAndApply({name:'slide-three.jpg'},content,undefined,{
+  upload:async()=>({url:'/api/media/'+id,mediaVersion:2}),verify:async()=>{},
+  commit:async body=>{calls.push(body);if(body.operation==='upload'){const updated=structuredClone(body.content);updated.media.push({id,url:body.url,alt:body.alt,credit:body.credit});return {content:updated};}assert.equal(body.content.media.at(-1).id,id);return {content:body.content,live:true,placements:1};}
+ },target);
+ assert.deepEqual(calls.map(c=>c.operation),['upload','assign']);assert.deepEqual(calls[1].target,target);assert.equal(calls[1].url,'/api/media/'+id);assert.equal(result.placements,1);
+ assert.equal(calls[0].content.home.heroImage,defaultContent.home.heroImage);assert.equal(calls[0].content.home.welcomeImage,defaultContent.home.welcomeImage);
+});
+test('failed library save never attempts to assign the uploaded photo to a slide',async()=>{
+ const calls=[];
+ await assert.rejects(uploadAndApply({name:'slide.jpg'},defaultContent,undefined,{upload:async()=>({url:'/api/media/'+id,mediaVersion:2}),verify:async()=>{},commit:async body=>{calls.push(body.operation);throw Error('Draft revision conflict');}},imageTarget(defaultContent,['home','slides',0,'image'])),/revision conflict/);
+ assert.deepEqual(calls,['upload']);
+});

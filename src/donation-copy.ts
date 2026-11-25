@@ -1,0 +1,20 @@
+export const donationCopy:Record<string,string>={
+ 'donation.title':'Donation',
+ 'donation.heroIntro':'Help make care, learning and connection possible.',
+ 'donation.area1':'Community support','donation.area2':'Learning & growth','donation.area3':'Spiritual wellbeing',
+ 'donation.cause':'Support Our Cause','donation.secure':'Secure payment with Stripe',
+ 'donation.question':'How much would you like to donate today?',
+ 'donation.intro':'Your generosity supports our community and helps us continue our work.',
+ 'donation.amount':'Donation amount','donation.custom':'Enter a custom amount',
+ 'donation.details':'Your details','donation.firstName':'First name','donation.lastName':'Last name',
+ 'donation.phone':'Phone number (optional)','donation.email':'Email address',
+ 'donation.address':'Billing address','donation.country':'Country','donation.line1':'Address line 1',
+ 'donation.line2':'Address line 2 (optional)','donation.city':'Town / city','donation.region':'County / state (optional)','donation.postcode':'Postcode / ZIP code',
+ 'donation.payment':'Payment details','donation.paymentIntro':'Enter your payment details below to complete your donation.',
+ 'donation.summary':'Donation summary','donation.frequency':'Giving frequency','donation.total':'Donation total',
+ 'donation.method':'Donate with Stripe','donation.methodNote':'Your card details are securely handled by Stripe. Available payment methods appear below.',
+ 'donation.declaration':'Declaration','donation.privacy':'We use your details to process your donation and keep the charity’s donation records. Donating does not subscribe you to marketing emails.',
+ 'donation.submit':'Donate now','donation.once':'One-off','donation.monthly':'Monthly',
+ 'donation.monthlyNote':'This amount repeats each month until cancelled. Contact the team for help managing your donation.',
+ 'donation.return':'Your payment was not completed. You can review your details and try again.'
+};

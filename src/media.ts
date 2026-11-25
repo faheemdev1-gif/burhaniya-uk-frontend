@@ -4,6 +4,7 @@ type ImageSlot = { path: (string | number)[]; label: string; url: string };
 function imageSlots(content: SiteContent): ImageSlot[] {
   return [
     {path:['settings','logo'],label:'Logo',url:content.settings.logo},
+    ...(content.donation?[{path:['donation','heroImage'],label:'Donation banner',url:content.donation.heroImage},{path:['donation','formImage'],label:'Donation form photograph',url:content.donation.formImage}]:[]),
     {path:['home','heroImage'],label:'Homepage hero',url:content.home.heroImage},
     {path:['home','welcomeImage'],label:'Homepage welcome',url:content.home.welcomeImage},
     ...(content.home.slides || []).map((slide,i)=>({path:['home','slides',i,'image'],label:`Homepage slide ${i+2}`,url:slide.image})),

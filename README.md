@@ -1,3 +1,11 @@
+# Version 2.2.0 — donation page and on-page Stripe payments
+
+Read **DONATION-PAGE-UPDATE.md** first. Update both applications and add the matching STRIPE_PUBLISHABLE_KEY to the backend environment. The donation page now follows the supplied reference, with independent donation photographs, donor/address fields and Stripe card entry directly on the page. Existing accounts and CMS content are preserved.
+
+# Frontend 2.1.1 — individual slide photographs
+
+Read **SLIDE-IMAGES-UPDATE.md**. Each homepage slide now has a visible image card with a direct upload button and visual photo picker. Compatible with your existing backend 2.1.0; no backend update is required.
+
 # Version 2.1.0 — live image updates
 
 Read **LIVE-IMAGES-SETUP.md** first. Update both frontend and backend. Image replacements and image selections now apply automatically after verification; new images are stored in the database. Existing content and accounts are preserved.

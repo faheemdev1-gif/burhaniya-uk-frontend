@@ -6,3 +6,10 @@ dist/
 .DS_Store
 *.tsbuildinfo
 .openai/
+
+.env
+.env.*
+!.env.example
+.vercel/
+node_modules/
+dist/

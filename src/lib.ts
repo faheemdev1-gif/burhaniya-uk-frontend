@@ -36,6 +36,7 @@ export function validateContent(value: unknown): asserts value is SiteContent {
       if (!/^\/(?!\/)[a-z0-9/?=&%#-]*$/i.test(slide.link) || slide.link.includes('..')) throw Error('Use a website page path for the slide link.');
     }
   }
+  if(d.donation!==undefined){strings(d.donation,['heroImage','formImage']);if(!imageAllowed(d.donation.heroImage)||!imageAllowed(d.donation.formImage))throw Error('Choose valid donation page photographs.');}
   if (d.copy !== undefined) { if (!d.copy || typeof d.copy!=='object' || Array.isArray(d.copy) || Object.keys(d.copy).length>2000 || Object.entries(d.copy).some(([k,v])=>k.length>200||typeof v!=='string'||v.length>20000)) throw Error('Check the website wording.'); }
   if(d.pages?.gallery){strings(d.pages.gallery,['eyebrow','title','intro','body','image']);if(!imageAllowed(d.pages.gallery.image))throw Error('Choose a valid gallery image.');}
   if (d.galleries !== undefined) {

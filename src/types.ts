@@ -6,6 +6,7 @@ export interface Gathering { id: string; slug: string; title: string; category: 
 export interface Story { id: string; slug: string; title: string; category: string; summary: string; body: string; image: string; readTime: string }
 export interface GalleryAlbum { id:string; slug:string; title:string; description:string; mediaIds:string[] }
 export interface SiteContent {
+  donation?: {heroImage:string;formImage:string};
   galleries?: GalleryAlbum[];
   copy?: Record<string,string>;
   schemaVersion: 1;
